@@ -4,7 +4,11 @@
   "description": "Test project for deploying ts/node to heroku",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "start": "node dist/index.js",
+    "postinstall": "tsc",
+    "watch-node": "nodemon dist/index.js",
+    "watch-ts": "tsc -w",
+    "deploy": "git add . && git commit -m Heroku && git push heroku master"
   },
   "author": "Kristian Lieberg",
   "license": "GPL-3.0-or-later",
