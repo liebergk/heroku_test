@@ -8,7 +8,7 @@
     "postinstall": "tsc",
     "watch-node": "nodemon dist/index.js",
     "watch-ts": "tsc -w",
-    "deploy": "git add . && git commit -m Heroku && git push heroku_test main"
+    "deploy": "git add . && git commit -m Heroku && git push -u origin main"
   },
   "author": "Kristian Lieberg",
   "license": "GPL-3.0-or-later",
