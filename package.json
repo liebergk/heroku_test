@@ -4,9 +4,7 @@
   "description": "Test project for deploying ts/node to heroku",
   "main": "index.js",
   "scripts": {
-    "tsc": "./node_modules/typescript/bin/tsc",
     "start": "node dist/index.js",
-    "postinstall": "tsc",
     "watch-node": "nodemon dist/index.js",
     "watch-ts": "tsc -w",
     "deploy": "git add . && git commit -m Heroku && git push -u origin main"
